@@ -4,11 +4,17 @@ This repository contains the hardware, implentnation and software descriptions f
 
 DC motors Technical Description 
 1.	Hardware Description
+
+
 In this task, the circuit has been designed to be composed of a 12V DC voltage source, a 5V DC voltage source, a microcontroller (Arduino Uno), L298n motor driver, two DC motors and a joystick to control the speed and direction of the motors. Moreover, the 12V battery is a rechargeable battery (Varicore). This battery is light and has a long lifetime. The recharging circuit is included. 
 2.	Implementation 
+
+
 To construct the circuit, first connect the motor driver to the Arduino. Connect ENA and ENB to the digital pins on Arduino respectively. The connect IN1 to pin 5, IN2 to pin 4, IN3 to pin 3 and IN4 to pin 2. After that, connect the motors. Connect the first motor the  output pins on the left and connect the red wire to OUT1 and the black wire to OUT2 (if you want to change the rotation direction switch the pins). Connect the second motor the output pins on the right and connect the red wire to OUT3 and the black wire to OUT4 (if you want to change the rotation direction switch the pins). Finally connect the 12V battery to the 12+ pin and the ground to GND and for the 5+ pin connect a 5V battery to the pin and the ground to GND.
 
 3.	Programing Description
+
+
 In order to control the motors speed and direction using the joystick the Arduino had to be programmed to take the change in the place of the joystick as input and write it as output and set the speed of the motors accordingly. Therefore, the joystick and motors have to be defined in Arduino. 
 
 void setup() {
